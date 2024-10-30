@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator HP</title>
+    <link rel="stylesheet" href="kalkulator.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+</head>
+<body>
+
+<div class="calculator">
+    <div id="display" class="display">0</div>
+    <div class="button-grid">
+        <div class="button clear" onclick="clearDisplay()">C</div>
+        <div class="button operation" onclick="inputOperator('%')">%</div>
+        <div class="button operation" onclick="inputOperator('/')">÷</div>
+        <div class="button operation" onclick="inputOperator('*')">×</div>
+        <div class="button" onclick="inputDigit('7')">7</div>
+        <div class="button" onclick="inputDigit('8')">8</div>
+        <div class="button" onclick="inputDigit('9')">9</div>
+        <div class="button operation" onclick="inputOperator('-')">−</div>
+        <div class="button" onclick="inputDigit('4')">4</div>
+        <div class="button" onclick="inputDigit('5')">5</div>
+        <div class="button" onclick="inputDigit('6')">6</div>
+        <div class="button operation" onclick="inputOperator('+')">+</div>
+        <div class="button" onclick="inputDigit('1')">1</div>
+        <div class="button" onclick="inputDigit('2')">2</div>
+        <div class="button" onclick="inputDigit('3')">3</div>
+        <div class="button operation" onclick="calculateFactorial()">!</div>
+        <div class="button" onclick="inputDigit('0')">0</div>
+        <div class="button" onclick="inputDigit('000')">000</div>
+        <div class="button" onclick="inputDigit('.')">.</div>
+        <div class="button equal" onclick="calculate()">=</div>
+    </div>
+</div>
+
+<script src="kalkulator.js"></script>
+</body>
+</html>
